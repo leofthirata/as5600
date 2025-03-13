@@ -16,8 +16,6 @@
 
 #include "as5600.h"
 
-#define DEV_ADDR 0x36
-
 int init()
 {
     int fd = open("/dev/i2c-1", O_RDWR);
