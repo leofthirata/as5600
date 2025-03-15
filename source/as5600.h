@@ -28,4 +28,10 @@
 #define AS5600_MAGNITUDE_L      0x1C
 #define AS5600_BURN             0xFF
 
+int read_regs(int fd, char reg, char *buf, int size);
+int read_reg(int fd, char reg);
+int write_regs(int fd, char reg, int data);
+int write_reg(int fd, char reg, char data);
+int get_bytes(int fd, char addr);
+
 #endif
